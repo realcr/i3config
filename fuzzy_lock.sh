@@ -1,4 +1,7 @@
-#!/bin/sh -e
+#!/usr/bin/env bash
+
+# Detect errors:
+set -e 
 
 # This script was taken from: 
 # https://faq.i3wm.org/question/83/
