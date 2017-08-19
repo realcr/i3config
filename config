@@ -165,9 +165,6 @@ exec_always --no-startup-id synclient TouchpadOff=1
 # Map an extra key as mod:key:
 exec_always --no-startup-id "~/.config/i3/map_extra_mod.sh"
 
-# Map printscreen as a right winkey:
-# exec_always --no-startup-id xmodmap -e 'keycode 107 = Super_R' && xset -r 107
-
 # Lock screen (Contro+Alt+Mod1)
 bindsym Control+Mod1+l exec "~/.config/i3/fuzzy_lock.sh"
 exec_always xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
