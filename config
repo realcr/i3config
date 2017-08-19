@@ -178,3 +178,6 @@ exec xset -r 107
 
 # Set menu key to be nonrepeat:
 exec xset -r 135
+
+# Keyboard layout change:
+exec_always setxkbmap -option 'grp:alt_shift_toggle'
