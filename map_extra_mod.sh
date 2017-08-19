@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Detect errors:
+set -e 
+
+set HOSTNAME = `hostname`
+
+if [ `hostname` = "nomaybe" ]
+then
+        # Laptop computer
+        # We map the printscreen key to be an extra winkey.
+        xmodmap -e 'keycode 107 = Super_R' && xset -r 107
+
+else
+        # Desktop computer. We map the menu key to be an extra winkey:
+        xmodmap -e 'keycode 135 = Super_R' && xset -r 135
+fi
+
