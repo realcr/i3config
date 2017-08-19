@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Detect errors:
+# Exit on error
 set -e 
 
 # This script was taken from: 
