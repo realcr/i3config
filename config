@@ -163,8 +163,6 @@ bar {
 # Disable touchpad:
 exec_always --no-startup-id synclient TouchpadOff=1
 
-# Map an extra key as mod:key:
-# exec_always --no-startup-id "~/.config/i3/map_extra_mod.sh"
 
 # Lock screen (Contro+Alt+Mod1)
 bindsym Control+Mod1+l exec "~/.config/i3/fuzzy_lock.sh"
@@ -173,11 +171,9 @@ exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 # key mappings for current user:
 exec xmodmap ~/.Xmodmap
 
-# Set print screen key to be non repeat:
-exec xset -r 107
-
-# Set menu key to be nonrepeat:
-exec xset -r 135
+# Map an extra key as mod:key.
+# This is done to make sure xmodmap is not invalidated after i3 reload.
+exec_always --no-startup-id "~/.config/i3/map_extra_mod.sh"
 
 # Keyboard layout change:
-exec_always setxkbmap -option 'grp:alt_shift_toggle'
+exec setxkbmap -option 'grp:alt_shift_toggle'
