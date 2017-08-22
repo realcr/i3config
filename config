@@ -175,8 +175,8 @@ exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 
 # Keyboard layout change:
 # Note: Having 'us,il' and not 'us, il' is very important.
-exec setxkbmap -layout us,il
-exec setxkbmap -option 'grp:alt_shift_toggle'
+exec_always "setxkbmap -layout us,il"
+exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # key mappings for current user:
 exec xmodmap ~/.Xmodmap
