@@ -168,15 +168,18 @@ exec_always --no-startup-id synclient TouchpadOff=1
 bindsym Control+Mod1+l exec "~/.config/i3/fuzzy_lock.sh"
 exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 
-# key mappings for current user:
-exec xmodmap ~/.Xmodmap
 
 # Map an extra key as mod:key.
 # This is done to make sure xmodmap is not invalidated after i3 reload.
 # exec_always --no-startup-id "~/.config/i3/map_extra_mod.sh"
 
 # Keyboard layout change:
+# Note: Having 'us,il' and not 'us, il' is very important.
+exec setxkbmap -layout us,il
 exec setxkbmap -option 'grp:alt_shift_toggle'
+
+# key mappings for current user:
+exec xmodmap ~/.Xmodmap
 
 # Start Dropbox:
 exec --no-startup-id dropbox start
