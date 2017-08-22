@@ -173,13 +173,20 @@ exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 # This is done to make sure xmodmap is not invalidated after i3 reload.
 # exec_always --no-startup-id "~/.config/i3/map_extra_mod.sh"
 
+
 # Keyboard layout change:
 # Note: Having 'us,il' and not 'us, il' is very important.
-exec "setxkbmap -layout us,il"
-exec "setxkbmap -option 'grp:alt_shift_toggle'"
+# exec_always "setxkbmap -layout us,il"
+
+# Toggle layouts with alt shift:
+# exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # key mappings for current user:
-exec_always xmodmap ~/.Xmodmap
+exec xmodmap ~/.Xmodmap
+
+
+# Keyboard stuff with fcitx:
+exec --no-startup-id exec fcitx-autostart
 
 # Start Dropbox:
 exec --no-startup-id dropbox start
