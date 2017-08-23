@@ -159,6 +159,12 @@ bar {
         status_command i3status
 }
 
+# Pulse audio controls
+# Increase sound volume:
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+# Decrease sound volume:
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+
 
 # Disable touchpad:
 exec_always --no-startup-id synclient TouchpadOff=1
