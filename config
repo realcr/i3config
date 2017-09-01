@@ -199,3 +199,6 @@ exec --no-startup-id exec fcitx-autostart
 
 # Start Dropbox:
 exec --no-startup-id dropbox start
+
+# Make display look nice using gnome-settings-daemon:
+exec --no-startup-id gnome-settings-daemon
