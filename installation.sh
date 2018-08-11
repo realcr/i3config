@@ -15,5 +15,8 @@ apt install pavucontrol
 # Used to configure how long before blanking screen.
 apt install xfce4-power-manager-settings
 
+# Install redshift, to control monitor color
+apt install redshift redshift-gtk
+
 # Configure nautilus to work with i3:
 gsettings set org.gnome.desktop.background show-desktop-icons false
