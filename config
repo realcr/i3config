@@ -212,3 +212,10 @@ exec --no-startup-id gnome-settings-daemon
 
 # Start redshift, to adjust screen color (Protect the eyes)
 exec --no-startup-id redshift-gtk
+
+# Disble back and forward mouse buttons (Delux USB mouse).
+# See:
+# https://askubuntu.com/questions/59128/
+#               how-to-disable-mouse-wheel-scroll-in-ubuntu-11-04-or-10-10
+# exec --no-startup-id xinput set-button-map 12 1 2 3 4 5 6 7 0 0 10 11 12 13
+
