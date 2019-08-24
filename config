@@ -208,7 +208,12 @@ exec --no-startup-id exec fcitx-autostart
 exec --no-startup-id dropbox start
 
 # Make display look nice using gnome-settings-daemon:
-exec --no-startup-id gnome-settings-daemon
+# Ubuntu 16:
+# exec --no-startup-id gnome-settings-daemon
+#
+# Ubuntu 18:
+# See: https://askubuntu.com/a/1081560 for more information:
+exec --no-startup-id XDG_CURRENT_DESKTOP=Gnome /usr/lib/gnome-settings-daemon/gsd-xsettings
 
 # Start redshift, to adjust screen color (Protect the eyes)
 exec --no-startup-id redshift-gtk

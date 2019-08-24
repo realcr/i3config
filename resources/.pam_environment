@@ -1,0 +1,5 @@
+# Added according to: https://askubuntu.com/questions/1062907/cant-change-from-ibus-to-fcitx
+
+XMODIFIERS DEFAULT=@im=fcitx
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE DEFAULT=fcitx

@@ -1,0 +1,5 @@
+! Map print screen key to right winkey:
+keycode 107 = Super_R
+
+! Map menu key to right winkey:
+keycode 135 = Super_R
