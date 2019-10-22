@@ -175,10 +175,14 @@ bindsym XF86AudioMute exec --no-startup-id "amixer -D pulse set Master 1+ toggle
 # Show networking configuration applet at the status line.
 exec --no-startup-id nm-applet
 
-
-# Disable touchpad:
+# Disable touchpad on startup:
 exec_always --no-startup-id synclient TouchpadOff=1
 
+# Disable touchpad shortcut:
+bindsym XF86AudioPrev exec --no-startup-id "synclient TouchpadOff=1"
+
+# Enable touchpad shortcut:
+bindsym XF86AudioPlay exec --no-startup-id "synclient TouchpadOff=0"
 
 # Lock screen (Contro+Alt+Mod1)
 bindsym Control+Mod1+l exec "~/.config/i3/fuzzy_lock.sh"
