@@ -198,7 +198,7 @@ exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 # exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # key mappings for current user:
-exec xmodmap ~/.Xmodmap
+exec xmodmap ~/.config/i3/Xmodmap
 
 
 # Keyboard stuff with fcitx:

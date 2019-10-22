@@ -3,9 +3,7 @@
 # Exit on error
 set -e 
 
-set HOSTNAME = `hostname`
-
-if [ `hostname` = "nomaybe" ]
+if [ `hostname` = "hope" ]
 then
         # Laptop computer
         # We map the printscreen key to be an extra winkey.

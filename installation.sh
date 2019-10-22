@@ -33,3 +33,11 @@ apt install fcitx-bin fcitx-googlepinyin
 # Run gnome-tweaks later to choose themes.
 sudo apt install gnome-tweak-tool
 
+
+# Solving other issues:
+
+# - To solve dmenu issue, Add an extra line to /usr/bin/dmenu_run:
+
+#       #!/bin/sh
+#       LANG=en_US.UTF-8    # <-- Add this line
+#       dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
