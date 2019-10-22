@@ -41,3 +41,5 @@ sudo apt install gnome-tweak-tool
 #       #!/bin/sh
 #       LANG=en_US.UTF-8    # <-- Add this line
 #       dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+
+# - Choose a theme with gnome-tweaks: Ambiance
