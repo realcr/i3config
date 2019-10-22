@@ -16,6 +16,9 @@ apt install pavucontrol
 # Used to configure how long before blanking screen.
 # apt install xfce4-power-manager-settings
 
+# A util to control the touchpad (Allowing to enable, disable):
+apt install xserver-xorg-input-synaptics-hwe-18.04
+
 # Install redshift, to control monitor color
 apt install redshift redshift-gtk
 
