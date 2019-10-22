@@ -11,9 +11,10 @@ apt install scrot xautolock
 # Used for controlling audio
 apt install pavucontrol
 
+# EDIT: Seems to not work on Ubuntu 18.
 # Power manager configuration.
 # Used to configure how long before blanking screen.
-apt install xfce4-power-manager-settings
+# apt install xfce4-power-manager-settings
 
 # Install redshift, to control monitor color
 apt install redshift redshift-gtk
@@ -33,6 +34,8 @@ apt install fcitx-bin fcitx-googlepinyin
 # Run gnome-tweaks later to choose themes.
 sudo apt install gnome-tweak-tool
 
+# Install fonts, so that websites look reasonable:
+sudo apt-get install ttf-mscorefonts-installer culmus
 
 # Solving other issues:
 
