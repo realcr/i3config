@@ -188,6 +188,8 @@ bindsym XF86AudioPlay exec --no-startup-id "synclient TouchpadOff=0"
 bindsym Control+Mod1+l exec "~/.config/i3/fuzzy_lock.sh"
 exec xautolock -time 15 -locker '~/.local/bin/fuzzy_lock.sh' &
 
+# Take a screenshot:
+bindsym Print exec "gnome-screenshot -i"
 
 # Map an extra key as mod:key.
 # This is done to make sure xmodmap is not invalidated after i3 reload.
